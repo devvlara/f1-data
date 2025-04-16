@@ -86,6 +86,6 @@ This README outlines Ferrari's data-driven approach to enhancing performance for
 
 ---
 
-By systematically collecting and analyzing these data points, Ferrari aims to enhance decision-making processes, optimize car performance, and achieve competitive success in the 2025 Formula 1 season.
+By systematically collecting and analyzing these data points, Ferrari aims to enhance decision-making processes, optimize car performance, and achieve competitive success in the 2025 Formula 1 season.
 
 --- 

@@ -1,75 +1,104 @@
-# Motivation
+Ferrari F1 2025 Data Engineering Repository
+This repository outlines Ferrari's data engineering strategy for the 2025 Formula 1 season. It focuses on the collection and organization of critical data to support data-driven decisions, enhancing team performance with the addition of Lewis Hamilton, the departure of Carlos Sainz, and continued collaboration with Charles Leclerc.
+Motivation
 
-- **F1 Growth**: Formula 1 is a rapidly growing sport, with increasing global interest.
-- **Engineering Excellence**: High-level engineering in F1 relies heavily on data-driven decisions to optimize performance.
+F1 Growth: Formula 1 is a rapidly growing sport with increasing global interest.
+Engineering Excellence: High-level engineering in F1 relies on data-driven decisions to optimize performance.
+
+Situation
+As Ferrari prepares for the 2025 season during the winter break, significant changes have been made:
+
+Lewis Hamilton joins from Mercedes, replacing Carlos Sainz.
+The Team Principal is working with the lead data engineer to identify essential data and metrics for collection and organization.
+Goal: Leverage data-driven decisions to improve team performance for the upcoming season.
+
+Desired Data
+To optimize Ferrari's performance in 2025, the following data and metrics are prioritized:
+Lewis Hamilton’s Recent Performance Metrics
+
+Lap Time Consistency: Analyze qualifying and race pace over recent seasons.
+Tire Management: Performance across stints and tire compounds.
+Telemetry Comparisons: Acceleration, braking, and corner entry/exit speeds across tracks.
+
+Carlos Sainz’s Departing Data
+
+Race-by-Race Telemetry: Identify strengths and weaknesses in Ferrari’s car setup.
+Pit Stop and Strategy Logs: Review reliability and operational patterns for optimization.
+
+Comparisons with Charles Leclerc
+
+Driving Style: Compare braking points, mid-corner speeds, and throttle application.
+Car Balance Preferences: Analyze oversteer vs. understeer preferences for setup compromises.
+Team Dynamics: Review historical on-track interactions between Hamilton and Leclerc.
+
+Car Development & Reliability
+
+Power Unit: Reliability, horsepower, torque, and thermal management for 2024, plus 2025 upgrades.
+Aerodynamics: Correlate wind tunnel and on-track performance.
+Reliability Logs: Analyze mechanical DNFs, causes, and mitigations.
+Upgrade Timelines: Evaluate historical success of mid-season upgrades.
+
+Pit Stop & Strategy Data
+
+Pit Stop Times: Average times and recurring errors.
+Strategy Decisions: Analyze early vs. late pit strategies across tracks.
+Real-Time Decisions: Assess reactivity vs. conservatism compared to competitors.
+
+Track-Specific Performance
+
+Lap Time Deltas: Compare performance in dry vs. wet conditions.
+Circuit Types: Evaluate high-downforce vs. low-downforce circuit performance.
+Overtaking: Analyze difficulty and success rates on specific tracks.
+Hamilton’s Historical Data: Review his performance on these circuits with Mercedes.
+
+Competitive Benchmarking
+
+Team Comparisons: Compare race pace, qualifying pace, and tire wear with Red Bull, Mercedes, McLaren, Aston Martin, etc.
+Sector Breakdowns: Identify deficits and advantages in 2024 sector times.
+
+Data Sources
+
+Kaggle: Formula 1 World Champions 1950-2024: Comprehensive dataset covering races, drivers, constructors, qualifying, circuits, lap times, pit stops, and championships.
+OpenF1: Real-time data including lap timings, car telemetry, radio communications, and more.
+
+Schemas
 
 
 
-# Situation
-
-As we approach the 2025 Formula 1 season during the winter break, Ferrari has made significant changes:
-- **Lewis Hamilton** joins from Mercedes, replacing Carlos Sainz.
-- The Team Principal is collaborating with the lead data engineer to identify critical data and metrics for collection and organization.
-- **Goal**: Leverage data-driven decisions to enhance team performance for the upcoming season.
+Schema Name
+Data Information
 
 
 
-# Desired Data
-
-To optimize Ferrari's performance for the 2025 season, the following data and metrics are prioritized:
-
-## Lewis Hamilton’s Recent Performance Metrics
-- **Lap Time Consistency**: Analyze qualifying and race pace over recent seasons.
-- **Tire Management**: Performance across stints and tire compounds.
-- **Telemetry Comparisons**: Acceleration, braking, and corner entry/exit speeds across tracks.
-
-## Carlos Sainz’s Departing Data
-- **Race-by-Race Telemetry**: Identify strengths and weaknesses in Ferrari’s car setup.
-- **Pit Stop and Strategy Logs**: Review reliability and operational patterns for optimization.
-
-## Comparisons with Charles Leclerc
-- **Driving Style**: Compare braking points, mid-corner speeds, and throttle application.
-- **Car Balance Preferences**: Analyze oversteer vs. understeer preferences for setup compromises.
-- **Team Dynamics**: Review historical on-track interactions between Hamilton and Leclerc.
-
-## Car Development & Reliability
-- **Power Unit**: Reliability, horsepower, torque, and thermal management for 2024, plus 2025 upgrades.
-- **Aerodynamics**: Correlate wind tunnel and on-track performance.
-- **Reliability Logs**: Analyze mechanical DNFs, causes, and mitigations.
-- **Upgrade Timelines**: Evaluate historical success of mid-season upgrades.
-
-## Pit Stop & Strategy Data
-- **Pit Stop Times**: Average times and recurring errors.
-- **Strategy Decisions**: Analyze early vs. late pit strategies across tracks.
-- **Real-Time Decisions**: Assess reactivity vs. conservatism compared to competitors.
-
-## Track-Specific Performance
-- **Lap Time Deltas**: Compare performance in dry vs. wet conditions.
-- **Circuit Types**: Evaluate high-downforce vs. low-downforce circuit performance.
-- **Overtaking**: Analyze difficulty and success rates on specific tracks.
-- **Hamilton’s Historical Data**: Review his performance on these circuits with Mercedes.
-
-## Competitive Benchmarking
-- **Team Comparisons**: Compare race pace, qualifying pace, and tire wear with Red Bull, Mercedes, McLaren, Aston Martin, etc.
-- **Sector Breakdowns**: Identify deficits and advantages in 2024 sector times.
+ferrari
+Driver-specific data about the Ferrari team
 
 
-
-# Data Sources
-
-- **[Kaggle: Formula 1 World Champions 1950-2024](https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020)**: Comprehensive dataset covering races, drivers, constructors, qualifying, circuits, lap times, pit stops, and championships.
-- **[OpenF1](https://openf1.org/)**: Real-time data including lap timings, car telemetry, radio communications, and more.
+kaggle
+All Formula 1 data (races, drivers, constructors, etc.) from 1950 to 2024
 
 
+mclaren
+Driver-specific data about the McLaren team
 
-# Schemas
 
-| Schema Name | Data Information |
-|-------------|------------------|
-| ferrari     | Driver-specific data about the Ferrari team |
-| kaggle      | All Formula 1 data (races, drivers, constructors, etc.) from 1950 to 2024 |
-| mclaren     | Driver-specific data about the McLaren team |
-| mercedes    | Driver-specific data about the Mercedes team |
-| openF1      | Real-time data: lap timings, telemetry, radio, etc. |
-| public      | Publicly available data (unspecified) |
-| redbull     | Driver-specific data about the Red Bull team |
+mercedes
+Driver-specific data about the Mercedes team
+
+
+openF1
+Real-time data: lap timings, telemetry, radio, etc.
+
+
+public
+Publicly available data (unspecified)
+
+
+redbull
+Driver-specific data about the Red Bull team
+
+
+Getting Started
+
+Clone the
+
